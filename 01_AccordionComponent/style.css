@@ -1,0 +1,73 @@
+html, body, dl, dt, dd{
+    margin: 0; 
+    padding: 0; 
+}
+
+body{
+    display: flex; 
+    height: calc(100vh - 8rem);
+    justify-content: center; 
+    align-items: center;
+    padding: 4rem; 
+    font-family: "Inter", "Helvetica Neue", Helvetica, Arial;
+    background: linear-gradient(153deg, rgba(166, 125, 254, 0.10) 0%, rgba(166, 125, 254, 0.00) 59.79%), linear-gradient(136deg, #1F1E2E 0%, #13121C 83.93%, #111019 100%);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+h1{
+    color: hsla(240, 8%, 70%, 1);
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid #2A283E;
+}
+main{
+    width: 40rem; 
+    padding: 1.5rem 2.5rem; 
+    background: hsl(245, 21%, 15%);
+    border-radius: 1.25rem; 
+    transition: 0.2s all;
+    border: 1px solid #2A283E;
+}
+
+dl{
+    position: relative;
+    overflow: hidden;
+}
+dt{
+    font-size: 1.5rem;
+    font-weight: bold; 
+    color:#9191A1;
+    padding: 0.5em 0 0.5em;
+    transition: 0.2s all;
+    display: flex;
+    padding: 1.25rem 0;
+}
+
+
+dt:hover{
+    color: #A67DFE;
+    cursor: pointer;
+    transition: 0.2s all;
+
+}
+dd{
+    font-size: 1.125rem;
+    margin-bottom: 1rem; 
+    line-height: 1.6;
+    color: hsl(245, 21%, 75%);
+    transform-origin:top center; 
+    transition: 0.25s all ease-in-out;
+    position: absolute;
+    visibility:hidden;
+    opacity: 0; 
+    transform:  translateY(-50%);
+}
+
+.activePanel{
+  position: initial; 
+  visibility: visible; 
+  transform: translateY(0);
+  opacity: 1;
+}
+.activeLink{
+   color:  #A67DFE;
+}
