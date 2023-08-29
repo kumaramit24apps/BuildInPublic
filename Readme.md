@@ -1,1 +1,1 @@
-# Just for building personal projects and learning. 
+# Just for building and learning in public
